@@ -26,7 +26,7 @@
 
 1. Склонируйте репозиторий с помощью команды:
    ```bash
-   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+   git clone https://github.com/IkramBbb/CreditCalc.git
    ```
 2. Откройте проект в Android Studio.
 3. Запустите приложение на эмуляторе или устройстве.
