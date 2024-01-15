@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Суммя кредита"/>
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoanAmount"
+        android:layout_marginTop="16dp"
+        android:hint="Процентная ставка"/>
+
+    <EditText
+        android:id="@+id/editTextLoanTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextInterestRate"
+        android:layout_marginTop="16dp"
+        android:hint="Срок кредита (в месяцах)"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoanTerm"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonAnnuity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Аннуитетный"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonDifferential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дифференцированный"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:text="Рассчитать"/>
+
+    <ListView
+        android:id="@+id/listViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
